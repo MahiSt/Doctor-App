@@ -16,7 +16,7 @@ public class DoctorDaoImpl implements IDoctorDao {
 
 	@Override
 	public int createTable() {
-		Connection connection=DbConection.openConnection();
+		Connection connection=DbConection.openConnection() ;
 		PreparedStatement statement=null;
 		String sql =Queries.CREATEQUERY;
 		int result=0;
