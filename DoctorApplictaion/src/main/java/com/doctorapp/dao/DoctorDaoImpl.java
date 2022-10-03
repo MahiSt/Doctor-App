@@ -18,7 +18,7 @@ public class DoctorDaoImpl implements IDoctorDao {
 	public int createTable() {
 		Connection connection=DbConection.openConnection() ;
 		PreparedStatement statement=null;
-		String sql =Queries.CREATEQUERY;
+		String sql =Queries.CREATEQUERY ;
 		int result=0;
 		try {
 			statement=connection.prepareStatement(sql);
